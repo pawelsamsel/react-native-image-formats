@@ -1,10 +1,10 @@
 
-const sharp = require('sharp');
-const fs = require('fs');
-const path = require('path');
+var sharp = require('sharp');
+var fs = require('fs');
+var path = require('path');
 
-const appArgs = process.argv.slice(2);
-const filePath = __dirname + '/' + appArgs[0];
+var appArgs = process.argv.slice(2);
+var filePath = __dirname + '/' + appArgs[0];
 
 if (!filePath) {
     console.log('Please pass file name...');
@@ -21,13 +21,13 @@ if (fs.lstatSync(filePath).isFile()) {
 }
 
 function processImage(imagePath) {
-    const filePathInfo = path.parse(imagePath);
-    const prefix = 'img_';
-    const filname1x = prefix + filePathInfo.name + filePathInfo.ext;
-    const filname2x = prefix + filePathInfo.name + '@2x' + filePathInfo.ext;
-    const filname3x = prefix + filePathInfo.name + '@3x' + filePathInfo.ext;
-    const image = sharp(filePath)
-    const image2 = sharp(filePath)
+    var filePathInfo = path.parse(imagePath);
+    var prefix = 'img_';
+    var filname1x = prefix + filePathInfo.name + filePathInfo.ext;
+    var filname2x = prefix + filePathInfo.name + '@2x' + filePathInfo.ext;
+    var filname3x = prefix + filePathInfo.name + '@3x' + filePathInfo.ext;
+    var image = sharp(filePath)
+    var image2 = sharp(filePath)
     image
         .metadata()
         .then(function(metadata) {
