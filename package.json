@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-formats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Creates @1x, @2x and @3x images formats for the React Native",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "sharp": "^0.25.4"
+  },
+  "bin": {
+    "react-native-image-formats": "./index.js"
   }
 }
