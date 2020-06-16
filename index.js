@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 var sharp = require('sharp');
 var fs = require('fs');
