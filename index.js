@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 var sharp = require('sharp');
+var process = require('process');
 var fs = require('fs');
 var path = require('path');
 
 var appArgs = process.argv.slice(2);
-var filePath = __dirname + '/' + appArgs[0];
+var filePath = process.cwd() + '/' + appArgs[0];
 
 if (!filePath) {
     console.log('Please pass file name...');
