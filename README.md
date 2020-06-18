@@ -5,8 +5,9 @@ Creates scaled versions of the input image with a prefix 'img_' and with suffixe
 
 ### Usage:
 ```
-npx react-native-image-formats file.png (120px x 120px)
+npx react-native-image-formats file.png
 ```
+Input file: file.png (120px x 120px)
 
 It will create 3 files: 
  - img_file@3x.png - original size (120px x 120px)
