@@ -22,7 +22,7 @@
   "author": "Pawel Samsel",
   "license": "ISC",
   "dependencies": {
-    "sharp": "^0.25.4"
+    "sharp": "^0.30.5"
   },
   "bin": {
     "react-native-image-formats": "./index.js"
